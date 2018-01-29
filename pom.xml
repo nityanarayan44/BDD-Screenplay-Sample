@@ -51,13 +51,6 @@
 
 	<dependencies>
 
-		<!--<dependency>
-			<groupId>com.socialcode.qa-gen-library</groupId>
-			<artifactId>qa-gen-library</artifactId>
-			<version>1.8.0</version>
-			<type>test-jar</type>
-		</dependency>-->
-
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
