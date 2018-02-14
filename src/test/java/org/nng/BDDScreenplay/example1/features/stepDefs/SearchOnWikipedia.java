@@ -1,12 +1,12 @@
+// Package
 package org.nng.BDDScreenplay.example1.features.stepDefs;
 
+// Import Section
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import org.nng.BDDScreenplay.example1.tasks.Navigate;
 import org.nng.BDDScreenplay.example1.ui.WikipediaMain;
-
 import org.nng.BDDScreenplay.example1.actions.WaitUntilClickable;
-
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,16 +16,17 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+// Class
 public class SearchOnWikipedia {
 
 	// Global
 	private final int waitTime = 100;
 	
 	// Methods 
-    @Before
-    public void set_the_stage() {
-        OnStage.setTheStage(new OnlineCast());
-    }
+    	@Before
+    	public void set_the_stage() {
+		OnStage.setTheStage(new OnlineCast());
+    	}
     
 	@Given("^user is on wikipedia home page as a \"([^\"]*)\"$")
 	public void NavigateToTheApplication(String actorName) throws Throwable {
