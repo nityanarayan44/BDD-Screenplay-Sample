@@ -1,5 +1,5 @@
 # Sesrch on wikipedia
-@issue:wikiSearch
+@issue:wikiSearch @Smoke @Positive
 Feature: Search on Wikipedia
   In order to test searching onwikipedia
   
@@ -13,4 +13,4 @@ Feature: Search on Wikipedia
 	    Examples:
 		  | keyword		|
 		  | Earth 		|
-		  | Mars			|
+		  | Mars		|
