@@ -28,7 +28,7 @@ import org.nng.qa.framework.BDDScreenplay.config.Configuration;
 //---------------------------------------------------------
 // Runner Class
 //---------------------------------------------------------
-public class CRunner {
+public class Runner {
 	
 	// Setup Before the Runner class executes stepDefs
 	@BeforeClass
