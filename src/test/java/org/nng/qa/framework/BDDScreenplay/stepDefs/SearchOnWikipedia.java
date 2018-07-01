@@ -9,7 +9,7 @@ package org.nng.qa.framework.BDDScreenplay.stepDefs;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-import org.nng.qa.framework.BDDScreenplay.actions.WaitUntilClickable;
+import org.nng.qa.framework.BDDScreenplay.actions.WaitUntil;
 import org.nng.qa.framework.BDDScreenplay.commons.Constants;
 import org.nng.qa.framework.BDDScreenplay.ui.WikipediaMain;
 
@@ -49,9 +49,9 @@ public class SearchOnWikipedia {
 	public void entersAKeywordToSearch(String keyword){
 	    // Entering a keyword to search
 		theActorInTheSpotlight().attemptsTo(
-				WaitUntilClickable.theElementLocated(WikipediaMain.searchBox, this.waitTime),
+				WaitUntil.elementIsClickableWithTimeout(WikipediaMain.searchBox, this.waitTime),
 			    Enter.theValue(keyword).into(WikipediaMain.searchBox),
-			    WaitUntilClickable.theElementLocated(WikipediaMain.searchButton, this.waitTime),
+			    WaitUntil.elementIsClickableWithTimeout(WikipediaMain.searchButton, this.waitTime),
 			    Click.on(WikipediaMain.searchButton)
 		);
 	}
