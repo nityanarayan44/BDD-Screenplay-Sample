@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nng.BDDScreenplay</groupId>
-	<artifactId>Example1</artifactId>
+	<artifactId>BDD-Screenplay-Sample</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
-	<name>BDD Serenity Screenplay project using Cucumber and WebDriver</name>
+	<name>BDD Screenplay project using BDD and Serenity</name>
 
 	<properties>
 		<completeTestSuite>**/*Runner.java</completeTestSuite>
@@ -38,6 +38,7 @@
 			<url>http://jcenter.bintray.com</url>
 		</repository>
 	</repositories>
+	
 	<pluginRepositories>
 		<pluginRepository>
 			<snapshots>
@@ -174,7 +175,7 @@
 				<version>4.0.0</version>
 				<executions>
 					<execution>
-				<?m2e execute onConfiguration?>
+					<?m2e execute onConfiguration?>
 						<id>generateRunners</id>
 						<phase>generate-test-sources</phase>
 						<goals>
@@ -184,7 +185,7 @@
 							<!-- Mandatory -->
 							<!-- List of package names to scan for glue code. -->
 							<glue>
-								<package>org.nng.BDDScreenplay.example1.features.stepDefs</package>
+								<package>org.nng.qa.framework.BDDScreenplay.stepDefs</package>
 							</glue>
 							<!-- These are optional, with the default values -->
 							<!-- Where to output the generated tests -->
@@ -226,7 +227,7 @@
 					<includes>
 						<include>${completeTestSuite}</include>
 					</includes>
-					<argLine>-Xmx512m</argLine>
+					<argLine>-Xmx2048m</argLine>
 				</configuration>
 				<executions>
 					<execution>
