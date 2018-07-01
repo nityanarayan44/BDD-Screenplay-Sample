@@ -1,0 +1,340 @@
+{
+  "name": "Searching a keyword on wikipedia home page",
+  "id": "search-on-wikipedia;searching-a-keyword-on-wikipedia-home-page",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Searching a keyword on wikipedia home page #1: {keyword\u003dEarth}",
+      "duration": 14915,
+      "startTime": "2018-07-01T16:21:14.478+05:30[Asia/Kolkata]",
+      "screenshots": [
+        {
+          "screenshot": "7641e14449a7ab6455b15caa211c32a1e24dac27717d6464472bf279bdea730c.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 2,
+          "description": "Given user is on wikipedia home page as a \"Tester\"",
+          "duration": 7466,
+          "startTime": "2018-07-01T16:21:14.533+05:30[Asia/Kolkata]",
+          "screenshots": [
+            {
+              "screenshot": "ec5f13642da812541275cff5352f7942115626d2d1ff799629546c9550499293.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 3,
+              "description": "Tester opens the https://www.wikipedia.org/",
+              "duration": 5976,
+              "startTime": "2018-07-01T16:21:15.178+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "36de513c12d7a45c7d94a06c7a4456d5772e9c130595b664367b9c1a3987016c.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "description": "When User enters a \"Earth\" on wikipedia search page",
+          "duration": 6731,
+          "startTime": "2018-07-01T16:21:22+05:30[Asia/Kolkata]",
+          "screenshots": [
+            {
+              "screenshot": "7641e14449a7ab6455b15caa211c32a1e24dac27717d6464472bf279bdea730c.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 5,
+              "description": "Tester Waits for Wiki Search input box on main page",
+              "duration": 498,
+              "startTime": "2018-07-01T16:21:22.033+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "e2eaee3610a17b18f25dc9555116dea8a3935f2151ac98937e301bc1764d3637.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 6,
+              "description": "Tester enters \u0027Earth\u0027 into Wiki Search input box on main page",
+              "duration": 675,
+              "startTime": "2018-07-01T16:21:22.534+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "74386d820a4284939fa90c13ffc4659d423bc7e8bb4dc30ee8aa09cb32e90210.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 7,
+              "description": "Tester Waits for Wiki Search button on main page",
+              "duration": 407,
+              "startTime": "2018-07-01T16:21:23.215+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "ba881e546d1e410c81481a3a27e0d38ff16d1e444206ca5aa966442d8839e96e.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 8,
+              "description": "Tester clicks on Wiki Search button on main page",
+              "duration": 4732,
+              "startTime": "2018-07-01T16:21:23.632+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "7641e14449a7ab6455b15caa211c32a1e24dac27717d6464472bf279bdea730c.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "description": "Then User should see results for the entered keyworked",
+          "duration": 331,
+          "startTime": "2018-07-01T16:21:28.732+05:30[Asia/Kolkata]",
+          "screenshots": [
+            {
+              "screenshot": "7641e14449a7ab6455b15caa211c32a1e24dac27717d6464472bf279bdea730c.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "description": "Searching a keyword on wikipedia home page #2: {keyword\u003dMars}",
+      "duration": 8575,
+      "startTime": "2018-07-01T16:21:29.506+05:30[Asia/Kolkata]",
+      "screenshots": [
+        {
+          "screenshot": "23fb013b5bcaf022120c271f91d61c577ac27fce48d572ef6b84607b72468c90.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 11,
+          "description": "Given user is on wikipedia home page as a \"Tester\"",
+          "duration": 2733,
+          "startTime": "2018-07-01T16:21:29.510+05:30[Asia/Kolkata]",
+          "screenshots": [
+            {
+              "screenshot": "e2eaee3610a17b18f25dc9555116dea8a3935f2151ac98937e301bc1764d3637.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 12,
+              "description": "Tester opens the https://www.wikipedia.org/",
+              "duration": 2428,
+              "startTime": "2018-07-01T16:21:29.541+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "36de513c12d7a45c7d94a06c7a4456d5772e9c130595b664367b9c1a3987016c.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "description": "When User enters a \"Mars\" on wikipedia search page",
+          "duration": 5169,
+          "startTime": "2018-07-01T16:21:32.244+05:30[Asia/Kolkata]",
+          "screenshots": [
+            {
+              "screenshot": "23fb013b5bcaf022120c271f91d61c577ac27fce48d572ef6b84607b72468c90.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 14,
+              "description": "Tester Waits for Wiki Search input box on main page",
+              "duration": 321,
+              "startTime": "2018-07-01T16:21:32.250+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "e2eaee3610a17b18f25dc9555116dea8a3935f2151ac98937e301bc1764d3637.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 15,
+              "description": "Tester enters \u0027Mars\u0027 into Wiki Search input box on main page",
+              "duration": 439,
+              "startTime": "2018-07-01T16:21:32.573+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "0e919bf0f704062e460f4133f6e74615a4e3db050446193a958598a678086c3e.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 16,
+              "description": "Tester Waits for Wiki Search button on main page",
+              "duration": 388,
+              "startTime": "2018-07-01T16:21:33.018+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "cb6e8e6902b4dc8367f2e2f4ae97ce52dfcb83f84c83018cf73e4c18474eda50.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 17,
+              "description": "Tester clicks on Wiki Search button on main page",
+              "duration": 3654,
+              "startTime": "2018-07-01T16:21:33.409+05:30[Asia/Kolkata]",
+              "screenshots": [
+                {
+                  "screenshot": "23fb013b5bcaf022120c271f91d61c577ac27fce48d572ef6b84607b72468c90.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "description": "Then User should see results for the entered keyworked",
+          "duration": 333,
+          "startTime": "2018-07-01T16:21:37.414+05:30[Asia/Kolkata]",
+          "screenshots": [
+            {
+              "screenshot": "23fb013b5bcaf022120c271f91d61c577ac27fce48d572ef6b84607b72468c90.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false
+        }
+      ]
+    }
+  ],
+  "userStory": {
+    "id": "search-on-wikipedia",
+    "storyName": "Search on Wikipedia",
+    "path": "Wikipedia_Search/SearchWikipedia.feature",
+    "narrative": "  In order to test searching onwikipedia",
+    "type": "feature"
+  },
+  "featureTag": {
+    "name": "Search on Wikipedia",
+    "type": "feature"
+  },
+  "title": "Searching a keyword on wikipedia home page",
+  "backgroundTitle": "",
+  "backgroundDescription": "",
+  "additionalIssues": [
+    "wikiSearch",
+    "wikiSearch",
+    "wikiSearch",
+    "wikiSearch"
+  ],
+  "tags": [
+    {
+      "name": "Wikipedia search",
+      "type": "capability"
+    },
+    {
+      "name": "test1",
+      "type": "tag"
+    },
+    {
+      "name": "Positive",
+      "type": "tag"
+    },
+    {
+      "name": "wikiSearch",
+      "type": "issue"
+    },
+    {
+      "name": "Smoke",
+      "type": "tag"
+    },
+    {
+      "name": "Wikipedia search/Search on wikipedia",
+      "type": "feature"
+    }
+  ],
+  "startTime": "2018-07-01T16:21:13.962+05:30[Asia/Kolkata]",
+  "duration": 25982,
+  "projectKey": "",
+  "sessionId": "bd789de18c8f2b7a7fc62faaea11976b",
+  "driver": "chrome:tester",
+  "dataTable": {
+    "headers": [
+      "keyword"
+    ],
+    "rows": [
+      {
+        "values": [
+          "Earth"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "Mars"
+        ],
+        "result": "SUCCESS"
+      }
+    ],
+    "predefinedRows": true,
+    "scenarioOutline": "When User enters a \"\u003ckeyword\u003e\" on wikipedia search page\n\rThen User should see results for the entered keyworked\n\r",
+    "dataSetDescriptors": [
+      {
+        "startRow": 0,
+        "rowCount": 0,
+        "name": ""
+      }
+    ]
+  },
+  "manual": false,
+  "testSource": "Cucumber",
+  "result": "SUCCESS",
+  "issues": [
+    "wikiSearch",
+    "wikiSearch",
+    "wikiSearch",
+    "wikiSearch"
+  ]
+}

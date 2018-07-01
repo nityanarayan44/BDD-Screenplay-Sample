@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5775406473,
+              "duration": 6634129694,
               "status": "passed"
             },
             "line": 7,
@@ -33,7 +33,7 @@
         "before": [
           {
             "result": {
-              "duration": 65688253,
+              "duration": 46402440,
               "status": "passed"
             },
             "match": {
@@ -50,7 +50,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5088560918,
+              "duration": 6365912674,
               "status": "passed"
             },
             "line": 11,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 1191961,
+              "duration": 1118365,
               "status": "passed"
             },
             "line": 12,
@@ -82,6 +82,12 @@
         "tags": [
           {
             "name": "@issue:wikiSearch"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Positive"
           },
           {
             "name": "@Positive"
@@ -100,7 +106,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3593883058,
+              "duration": 2459968970,
               "status": "passed"
             },
             "line": 7,
@@ -122,7 +128,7 @@
         "before": [
           {
             "result": {
-              "duration": 1633505,
+              "duration": 1457094,
               "status": "passed"
             },
             "match": {
@@ -139,7 +145,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5023147239,
+              "duration": 4821003121,
               "status": "passed"
             },
             "line": 11,
@@ -157,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 759448,
+              "duration": 820514,
               "status": "passed"
             },
             "line": 12,
@@ -171,6 +177,12 @@
         "tags": [
           {
             "name": "@issue:wikiSearch"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Positive"
           },
           {
             "name": "@Positive"
