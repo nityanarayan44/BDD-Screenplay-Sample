@@ -6,11 +6,11 @@ Feature: Search on Wikipedia
 	Background:
 		Given user is on wikipedia home page as a "Tester"
 	    		
-	@Positive @test1
+	@Positive @Test1
 	Scenario Outline: Searching a keyword on wikipedia home page
 	    When User enters a "<keyword>" on wikipedia search page
 	    Then User should see results for the entered keyworked
 	    Examples:
-		  | keyword		|
-		  | Earth 		|
+		  | keyword	|
+		  | Earth 	|
 		  | Mars		|
