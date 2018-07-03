@@ -24,7 +24,15 @@ public class Constants {
 		// ======================================
 		// URL CONSTANTS
 		// ======================================
-		public static final String URL = "https://www.wikipedia.org/";
+		public static final String LOGIN_PLAIN = "LOGIN_PLAIN";
+		public static final String LOGIN_OAUTH = "LOGIN_OAUTH";
+		
+		// ======================================
+		// URL CONSTANTS
+		// ======================================
+		public static final String WIKIPEDIA_URL = "https://www.wikipedia.org/";
+		public static final String GMAIL_URL = "https://www.google.com/gmail/";
+		public static final String GOOGLE_LOGIN = "https://accounts.google.com/signin/";
 		
 		// ======================================
 		// LOCATION CONSTANTS

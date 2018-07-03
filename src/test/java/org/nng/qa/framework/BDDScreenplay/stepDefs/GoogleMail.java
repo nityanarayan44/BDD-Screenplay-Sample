@@ -9,28 +9,25 @@ package org.nng.qa.framework.BDDScreenplay.stepDefs;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-import org.nng.qa.framework.BDDScreenplay.actions.WaitUntil;
+import org.nng.qa.framework.BDDScreenplay.actions.Navigate;
 import org.nng.qa.framework.BDDScreenplay.commons.Constants;
-import org.nng.qa.framework.BDDScreenplay.ui.WikipediaMain;
+import org.nng.qa.framework.BDDScreenplay.config.Configuration;
+import org.nng.qa.framework.BDDScreenplay.tasks.login.google.GMailLogin;
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 //---------------------------------
 // Class
 //---------------------------------
-public class SearchOnWikipedia {
+public class GoogleMail {
 
 	// Global
 	//---------------------------------
-	private final int waitTime = 100;
 	
 	// Before Methods 
 	//---------------------------------
@@ -39,24 +36,20 @@ public class SearchOnWikipedia {
 		OnStage.setTheStage(new OnlineCast());
     	}
     
-	@Given("^user is on wikipedia home page as a \"([^\"]*)\"$")
+	@Given("^User is on Gmail home page as a \"([^\"]*)\"$")
 	public void NavigateToTheApplication(String actorName) throws Throwable {
         // Opens a specific URL
-		theActorCalled(actorName).wasAbleTo(Open.url(Constants.WIKIPEDIA_URL));       
+		//theActorCalled(actorName);
+		theActorCalled(actorName).wasAbleTo(Navigate.to(Constants.GMAIL_URL));
 	}
 	
-	@When("^User enters a \"([^\"]*)\" on wikipedia search page$")
-	public void entersAKeywordToSearch(String keyword){
-	    // Entering a keyword to search
-		theActorInTheSpotlight().attemptsTo(
-				WaitUntil.elementIsClickableWithTimeout(WikipediaMain.searchBox, this.waitTime),
-			    Enter.theValue(keyword).into(WikipediaMain.searchBox),
-			    WaitUntil.elementIsClickableWithTimeout(WikipediaMain.searchButton, this.waitTime),
-			    Click.on(WikipediaMain.searchButton)
-		);
+	@When("^User has access of gmail as \"([^\"]*)\"$")
+	public void googleLoginAccessAsUser(String user){
+	    // LogIn to the Google Mail 
+		theActorInTheSpotlight().attemptsTo( GMailLogin.with( Configuration.getValueFromConfigurations(user) ) );
 	}
 	
-	@Then("^User should see results for the entered keyworked$")
+	@Then("^User should see list of mails$")
 	public void shouldSeeLandingPage(){
 		//
 	}

@@ -27,7 +27,7 @@ public class Navigate implements Task {
 	// Constructor Methods
 	//======================
 		public Navigate() {
-			this.url =  Constants.URL;
+			this.url =  Constants.WIKIPEDIA_URL;
 		}
 		public Navigate(String url) {
 			this.url = url; 
