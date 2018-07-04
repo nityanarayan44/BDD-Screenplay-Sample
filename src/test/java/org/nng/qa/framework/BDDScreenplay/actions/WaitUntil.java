@@ -67,7 +67,7 @@ public class WaitUntil implements Interaction {
 		switch(condition) {
 			// For Visibility
 			case Constants.VISIBILITY: 	
-				if (targetElement.isCurrentlyVisible() || targetElement.isDisplayed()) {
+				if (!(targetElement.isCurrentlyVisible() || targetElement.isDisplayed())) {
 					if (this.timeout != Constants.ZERO && this.timeout > Constants.ZERO) {
 						BrowseTheWeb.as(actor).withTimeoutOf(this.timeout, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOf(targetElement));
 					} else {
