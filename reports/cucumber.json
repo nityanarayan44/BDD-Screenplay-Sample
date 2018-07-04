@@ -11,19 +11,23 @@
         "steps": [
           {
             "result": {
-              "duration": 6634129694,
+              "duration": 6847095575,
               "status": "passed"
             },
             "line": 7,
-            "name": "user is on wikipedia home page as a \"Tester\"",
+            "name": "User is on \"Gmail page\" as a \"NITYA NARAYAN GAUTAM\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Tester",
-                  "offset": 37
+                  "val": "Gmail page",
+                  "offset": 12
+                },
+                {
+                  "val": "NITYA NARAYAN GAUTAM",
+                  "offset": 30
                 }
               ],
-              "location": "SearchOnWikipedia.NavigateToTheApplication(String)"
+              "location": "CommonSteps.initUserAndNavigateToPage(String,String)"
             },
             "keyword": "Given "
           }
@@ -33,48 +37,62 @@
         "before": [
           {
             "result": {
-              "duration": 46402440,
+              "duration": 167037825,
               "status": "passed"
             },
             "match": {
-              "location": "SearchOnWikipedia.set_the_stage()"
+              "location": "CommonSteps.set_the_stage()"
             }
           }
         ],
         "line": 15,
-        "name": "Searching a keyword on wikipedia home page",
+        "name": "Send Mail to a specific recepient",
         "description": "",
-        "id": "search-on-wikipedia;searching-a-keyword-on-wikipedia-home-page;;2",
+        "id": "browse-the-google-mail;send-mail-to-a-specific-recepient",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6365912674,
+              "duration": 3864572999,
               "status": "passed"
             },
-            "line": 11,
-            "name": "User enters a \"Earth\" on wikipedia search page",
+            "line": 16,
+            "name": "User logIn to gmail as \"Standard User\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Earth",
-                  "offset": 15
+                  "val": "Standard User",
+                  "offset": 24
                 }
               ],
-              "location": "SearchOnWikipedia.entersAKeywordToSearch(String)"
+              "location": "GoogleMail.googleLoginAccessAsUser(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1118365,
+              "duration": 15458044776,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User should see results for the entered keyworked",
+            "line": 17,
+            "name": "User compose the mail \"Reciever\" with \"subject\" and \"body\"",
             "match": {
-              "location": "SearchOnWikipedia.shouldSeeLandingPage()"
+              "arguments": [
+                {
+                  "val": "Reciever",
+                  "offset": 23
+                },
+                {
+                  "val": "subject",
+                  "offset": 39
+                },
+                {
+                  "val": "body",
+                  "offset": 53
+                }
+              ],
+              "location": "GoogleMail.composeMailFor(String,String,String)"
             },
             "keyword": "Then "
           }
@@ -93,110 +111,15 @@
             "name": "@Positive"
           },
           {
-            "name": "@test1"
-          }
-        ]
-      },
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2459968970,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user is on wikipedia home page as a \"Tester\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Tester",
-                  "offset": 37
-                }
-              ],
-              "location": "SearchOnWikipedia.NavigateToTheApplication(String)"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1457094,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchOnWikipedia.set_the_stage()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Searching a keyword on wikipedia home page",
-        "description": "",
-        "id": "search-on-wikipedia;searching-a-keyword-on-wikipedia-home-page;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4821003121,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User enters a \"Mars\" on wikipedia search page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Mars",
-                  "offset": 15
-                }
-              ],
-              "location": "SearchOnWikipedia.entersAKeywordToSearch(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 820514,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User should see results for the entered keyworked",
-            "match": {
-              "location": "SearchOnWikipedia.shouldSeeLandingPage()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@issue:wikiSearch"
-          },
-          {
-            "name": "@Smoke"
-          },
-          {
-            "name": "@Positive"
-          },
-          {
-            "name": "@Positive"
-          },
-          {
-            "name": "@test1"
+            "name": "@Test1"
           }
         ]
       }
     ],
-    "name": "Search on Wikipedia",
-    "description": "  In order to test searching onwikipedia",
-    "id": "search-on-wikipedia",
+    "name": "Browse the Google Mail",
+    "description": "\t\tIn order to browse the google mail, user login and check the mails",
+    "id": "browse-the-google-mail",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/Wikipedia_Search/SearchWikipedia.feature"
+    "uri": "src/test/resources/features/Google_Login/GoogleLogin.feature"
   }
 ]

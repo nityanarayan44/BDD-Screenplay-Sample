@@ -24,8 +24,11 @@ public class GMailPage {
 	// Recovery Mail from socialCode
 	// ---------------------------------
 	public static Target MAIL_RECOVERY = Target.the("Mail for Password Recovery").locatedBy("(//span[@email='{0}'])[1]/../../..");
-	//public static Target RESET_PASSWORD_LINK = Target.the("Link to reset the password").locatedBy("//a[contains(@href, 'password/reset') and contains(text(), 'Click here')]");
-	//public static Target RESET_PASSWORD_BTN = Target.the("Link to reset the password").locatedBy("//a[contains(text(), 'RESET PASSWORD')]");
-	
+	public static Target COMPOSE_BUTTON = Target.the("Compose mail button").locatedBy("//*[@role='button' and contains(text(), 'COMPOSE')]");
+	public static Target COMPOSE_MAIL_TO = Target.the("Send mail To").locatedBy("//textarea[@aria-label='To']");
+	public static Target COMPOSE_MAIL_SUBJECT = Target.the("Mail Subject").locatedBy("//*[@aria-label='Subject']");
+	public static Target COMPOSE_MAIL_BODY = Target.the("Mail Body").locatedBy("//*[@role='textbox' and @aria-label='Message Body']");
+	public static Target SEND_MAIL = Target.the("Mail Body").locatedBy("//*[contains(@data-tooltip, 'Send')]");
+	// 
 	
 }
