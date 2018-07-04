@@ -31,6 +31,7 @@ public class Constants {
 		// URL CONSTANTS
 		// ======================================
 		public static final String WIKIPEDIA_URL = "https://www.wikipedia.org/";
+		public static final String WIKIPEDIA_HOMEPAGE_API_URL = "https://en.wikipedia.org/api/rest_v1/page/summary/Wikipedia";
 		public static final String GMAIL_URL = "https://www.google.com/gmail/";
 		public static final String GOOGLE_LOGIN = "https://accounts.google.com/signin/";
 		

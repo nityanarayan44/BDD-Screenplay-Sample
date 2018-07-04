@@ -4,9 +4,9 @@ Feature: Browse the Google Mail
 		In order to browse the google mail, user login and check the mails
   
 	Background:
-		Given User is on Gmail home page as a "NITYA NARAYAN GAUTAM"
+		Given User is on "Gmail page" as a "NITYA NARAYAN GAUTAM"
 	    		
-	@Positive @Test1
+	@Positive @Test10
 	Scenario: GMail login
-	    When User has access of gmail as "Standard User"
+	    When User logIn to gmail as "Standard User"
 	    Then User should see list of mails
