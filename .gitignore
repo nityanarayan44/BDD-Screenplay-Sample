@@ -1,0 +1,7 @@
+*.class
+/target/
+chromedriver
+.*
+cucumber.json
+!*.gitignore
+/reports/cucumber.json
