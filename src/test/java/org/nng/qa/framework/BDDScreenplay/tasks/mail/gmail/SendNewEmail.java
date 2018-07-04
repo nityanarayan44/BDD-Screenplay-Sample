@@ -1,5 +1,5 @@
 // PACKAGE
-package org.nng.qa.framework.BDDScreenplay.tasks.gauravTask;
+package org.nng.qa.framework.BDDScreenplay.tasks.mail.gmail;
 
 // IMPORT SECTION
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -19,7 +19,7 @@ import net.thucydides.core.annotations.Step;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyVisible;
 
 // CLASS
-public class EmailWriteAndSend implements Task {
+public class SendNewEmail implements Task {
 
 	// ---------------------------------
 	// GLOBALS
@@ -30,7 +30,7 @@ public class EmailWriteAndSend implements Task {
 	// ---------------------------------
 	// CONSTRUCTOR
 	// ---------------------------------
-	public EmailWriteAndSend(String senderEmail, String messageBody, String subject) {
+	public SendNewEmail(String senderEmail, String messageBody, String subject) {
 		// DO SOMETHING
 		this.senderEmail = senderEmail;
 		this.messageBody = messageBody;
@@ -58,9 +58,9 @@ public class EmailWriteAndSend implements Task {
 	// ---------------------------------
 	// BUIDERS
 	// ---------------------------------
-	public static EmailWriteAndSend withSendeEmailMessageAndSubjectLine(String senderEmail, String messageBody,
+	public static SendNewEmail withSendeEmailMessageAndSubjectLine(String senderEmail, String messageBody,
 			String subject) {
-		return instrumented(EmailWriteAndSend.class, senderEmail, messageBody, subject);
+		return instrumented(SendNewEmail.class, senderEmail, messageBody, subject);
 	}
 
 }

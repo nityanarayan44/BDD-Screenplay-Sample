@@ -1,5 +1,5 @@
 // PACKAGE
-package org.nng.qa.framework.BDDScreenplay.tasks.gauravTask;
+package org.nng.qa.framework.BDDScreenplay.tasks.mail.gmail;
 
 // IMPORT SECTION
 import static net.serenitybdd.screenplay.Tasks.instrumented;
