@@ -4,9 +4,9 @@ Feature: Search on Wikipedia
   In order to test searching onwikipedia
   
 	Background:
-		Given user is on wikipedia home page as a "Tester"
+		Given User is on "wikipedia page" as a "Tester"
 	    		
-	@Positive
+	@Positive @Test10
 	Scenario Outline: Searching a keyword on wikipedia home page
 	    When User enters a "<keyword>" on wikipedia search page
 	    Then User should see results for the entered keyworked

@@ -122,6 +122,7 @@ public class WaitUntil implements Interaction {
 	// For Element InVisibility
 	public static WaitUntil elementIsInvisibleWithTimeout(Target target, int timeout) {
 		return instrumented(WaitUntil.class, target, timeout, Constants.INVISIBILITY);
+		
 	}
 	public static WaitUntil elementIsInvisible(Target target) {
 		return instrumented(WaitUntil.class, target, Constants.INVISIBILITY);
