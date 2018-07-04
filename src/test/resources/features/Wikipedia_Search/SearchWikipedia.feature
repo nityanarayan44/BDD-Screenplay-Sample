@@ -14,3 +14,4 @@ Feature: Search on Wikipedia
 		  | keyword	|
 		  | Earth 	|
 		  | Mars		|
+		  | Venus|
