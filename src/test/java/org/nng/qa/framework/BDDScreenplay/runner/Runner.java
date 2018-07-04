@@ -17,7 +17,7 @@ import org.nng.qa.framework.BDDScreenplay.config.Configuration;
 //---------------------------------------------------------
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-	format		= { "json:reports/cucumber.json" },
+	plugin		= { "json:reports/cucumber.json" },
 	features		= { "src/test/resources/features/" }, 
 	glue 		= { "org.nng.qa.framework.BDDScreenplay.stepDefs" },
 	dryRun 		= false,
