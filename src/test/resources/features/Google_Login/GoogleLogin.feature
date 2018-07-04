@@ -6,7 +6,12 @@ Feature: Browse the Google Mail
 	Background:
 		Given User is on "Gmail page" as a "NITYA NARAYAN GAUTAM"
 	    		
-	@Positive @Test10
-	Scenario: GMail login
+	@Positive @Test11
+	Scenario: Open Mail for a specific recepient
 	    When User logIn to gmail as "Standard User"
-	    Then User should see list of mails
+	    Then User open the mail from "Sender"
+	    
+	@Positive @Test1
+	Scenario: Send Mail to a specific recepient
+	    When User logIn to gmail as "Standard User"
+	    Then User compose the mail "Reciever" with "subject" and "body"

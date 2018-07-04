@@ -6,7 +6,7 @@ Feature: Sample Test for the REST APIs
 	Background:
 		#Given User has access of "wikipedia page" as a "NITYA NARAYAN GAUTAM"
 		Given User has access of wikipedia page as a "NITYA NARAYAN GAUTAM"
-	    		
+
 	@Positive @Test10
 	Scenario: Landing Page content
 	    When User request for the landing page content

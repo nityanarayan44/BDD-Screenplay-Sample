@@ -22,7 +22,7 @@ import org.nng.qa.framework.BDDScreenplay.config.Configuration;
 	glue 		= { "org.nng.qa.framework.BDDScreenplay.stepDefs" },
 	dryRun 		= false,
 	monochrome 	= true
-	,tags = {"@TestG"}
+	//,tags = {"@TestG"}
 )
 
 //---------------------------------------------------------
