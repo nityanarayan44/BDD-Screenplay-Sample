@@ -26,7 +26,7 @@ public class Constants {
 		// ======================================
 		public static final String LOGIN_PLAIN = "LOGIN_PLAIN";
 		public static final String LOGIN_OAUTH = "LOGIN_OAUTH";
-		
+		public static final String REST_URL	= "http://jsonplaceholder.typicode.com/";
 		// ======================================
 		// URL CONSTANTS
 		// ======================================
