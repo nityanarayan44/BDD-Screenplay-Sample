@@ -24,6 +24,7 @@ import screenplay.commons.Constants;
 import screenplay.questions.Fibonacci;
 import screenplay.questions.Rest;
 import screenplay.tasks.MultiStepIn;
+import screenplay.tasks.StepInCreateStory;
 import screenplay.tasks.StepInLogin;
 
 //======================================
@@ -67,7 +68,7 @@ public class StepInDef {
 					counter = counter +2;
 					theActorInTheSpotlight().wasAbleTo(Open.url(Constants.STEPIN_LOGIN_URL));
 					theActorInTheSpotlight().attemptsTo( StepInLogin.withCredentials("tm1@testmile.org/Testing123") );
-					theActorInTheSpotlight().attemptsTo(tasks);
+					theActorInTheSpotlight().attemptsTo(StepInCreateStory.publishStory(arg1, arg2, arg3, arg4, arg5));
 				}
 			}
 		}

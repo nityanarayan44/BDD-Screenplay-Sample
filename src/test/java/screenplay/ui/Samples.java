@@ -13,6 +13,6 @@ public class Samples {
 		// For Parent:: //*/ancestor::<Conditions>
 		
 		// XPATH SAMPLES WITH AXIS
-		public static Target SAMPLE_WITH_PROPERTY_CAONTAINS = Target.the("Element that contains some property").locatedBy("//*[contains(@class, 'primary-header')]");
-		
+	public static Target SAMPLE_WITH_PROPERTY_CAONTAINS = Target.the("Element that contains some property").locatedBy("//*[contains(@class, 'primary-header')]");
+	
 }

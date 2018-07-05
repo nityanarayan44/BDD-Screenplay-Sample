@@ -10,7 +10,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Open;
 import screenplay.actions.WaitUntil;
 import net.thucydides.core.annotations.Step;
 import screenplay.commons.Constants;
@@ -47,13 +46,12 @@ public class StepInLogin implements Task {
 	//==================
 		@Override
 	    @Step("{0} Login to application with #userName")
-	    public <T extends Actor> void performAs(T actor) {
-			
-			actor.attemptsTo(
-				WaitUntil.elementIsClickable(StepInLoginPageUi.EMAIL_ADDRESS),
-				Enter.theValue(userName).into(StepInLoginPageUi.EMAIL_ADDRESS),
-				Enter.theValue(password).into(StepInLoginPageUi.PASSWORD),Click.on(StepInLoginPageUi.SIGN_IN),
-			    WaitUntil.elementIsClickable(StepInStoryPageUi.NEW_STORY_BUTTON));
+	    public <T extends Actor> void performAs(T actor) {  
+	     actor.attemptsTo(
+	    		 WaitUntil.elementIsClickable(StepInLoginPageUi.EMAIL_ADDRESS),
+			      Enter.theValue(userName).into(StepInLoginPageUi.EMAIL_ADDRESS),
+			      Enter.theValue(password).into(StepInLoginPageUi.PASSWORD),Click.on(StepInLoginPageUi.SIGN_IN),
+			      WaitUntil.elementIsClickable(StepInStoryPageUi.NEW_STORY_BUTTON));
 	    }
 	
 	//=================
