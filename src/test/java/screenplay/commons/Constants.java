@@ -57,6 +57,11 @@ public class Constants {
 		public static final String VISIBILITY = "VISIBILITY";
 		public static final String INVISIBILITY = "INVISIBILITY";
 		
+		// ======================================
+		// Actor Name
+		// ======================================
+		public static final String actorName = "StepInUser";
+		public static final String stepInTaskUrl = "http://13.250.41.115/ghost/#/signin";
 		
 
 }

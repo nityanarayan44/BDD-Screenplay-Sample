@@ -19,7 +19,7 @@ import screenplay.config.Configuration;
 @CucumberOptions(
 	plugin		= { "json:reports/cucumber.json" },
 	features		= { "src/test/resources/features/" }, 
-	glue 		= { "org.nng.qa.framework.BDDScreenplay.stepDefs" },
+	glue 		= { "screenplay.stepDefs" },
 	dryRun 		= false,
 	monochrome 	= true
 	//,tags = {"@TestG"}
