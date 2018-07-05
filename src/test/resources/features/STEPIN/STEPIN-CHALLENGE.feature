@@ -1,6 +1,5 @@
-# Gaurav 
-@issue:gaurav @Smoke @Positive
-	    	Feature: Go to STePIn app and create a story 
+@Positive
+	Feature: Go to STePIn app and create a story 
 				 
 	@Positive @Demo
 	Scenario: Go to the stepIn Ghost application 
