@@ -3,16 +3,14 @@ package screenplay.tasks.yahoo;
 import library.utils.Manupulate;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
-import net.serenitybdd.screenplay.PerformsTasks;
-import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import screenplay.actions.WaitUntil;
 import screenplay.commons.Constants;
 import screenplay.ui.yahoo.Yahoo;
 
-public class Login implements Performable {
+public class Login implements Task {
 
 	
 	String user, password;
