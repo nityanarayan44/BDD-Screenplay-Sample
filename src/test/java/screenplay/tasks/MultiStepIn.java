@@ -52,19 +52,19 @@ public class MultiStepIn implements Task {
 			ExecutorService es = Executors.newCachedThreadPool();
 			
 			// Using Threads
-			//for(int index=0; index<5; index++)
+			for(int index=0; index<5; index++)
 			es.execute(new Runnable() {
 
 					@Override
 					public void run() {
 						try {
-							//BrowseTheWeb.as(actor).getDriver().manage().window().setSize(new Dimension(600, 800));	
-							//actor.wasAbleTo(Open.url("https://google.com"));
-							//actor.wasAbleTo(Open.url(Constants.STEPIN_LOGIN_URL));
-							//actor.attemptsTo( StepInLogin.withCredentials("tm1@testmile.org/Testing123") );
+							BrowseTheWeb.as(actor).getDriver().manage().window().setSize(new Dimension(600, 800));	
+							actor.wasAbleTo(Open.url("https://google.com"));
+							actor.wasAbleTo(Open.url(Constants.STEPIN_LOGIN_URL));
+							actor.attemptsTo( StepInLogin.withCredentials("tm1@testmile.org/Testing123") );
 							
 							// Displaying the thread that is running
-			    	            System.out.println ("Thread " + Thread.currentThread().getId() + " is running");
+			    	            //System.out.println ("Thread " + Thread.currentThread().getId() + " is running");
 			    	        } catch (Exception e)
 			    	        {
 			    	            // Throwing an exception

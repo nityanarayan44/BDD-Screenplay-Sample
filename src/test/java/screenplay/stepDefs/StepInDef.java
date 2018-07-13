@@ -59,15 +59,14 @@ public class StepInDef {
 		@When("^User Creates a story intitle with \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" and with body \"([^\"]*)\"$")
 		public void user_Creates_a_story_intitle_with_and_with_body(String arg1, String arg2, String arg3, String arg4, String arg5) throws Exception {
 			ArrayList<Integer> fibo = theActorInTheSpotlight().recall("fibbonacci");
-			String rest[] = theActorInTheSpotlight().recall("rest-resp");
 			int counter = 0;
 			for (int item : fibo)
 			{
 				if(counter < 10) {
-					//theActorInTheSpotlight().attemptsTo( MultiStepIn.to(counter, counter+1) );
+					theActorInTheSpotlight().attemptsTo( MultiStepIn.to(counter, counter+1) );
 					counter = counter +2;
 					theActorInTheSpotlight().wasAbleTo(Open.url(Constants.STEPIN_LOGIN_URL));
-					theActorInTheSpotlight().attemptsTo( StepInLogin.withCredentials("tm1@testmile.org/Testing123") );
+					theActorInTheSpotlight().attemptsTo( StepInLogin.withCredentials("tm2@testmile.org/Testing123") );
 					theActorInTheSpotlight().attemptsTo(StepInCreateStory.publishStory(arg1, arg2, arg3, arg4, arg5));
 				}
 			}
