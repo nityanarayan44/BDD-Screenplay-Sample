@@ -3,6 +3,7 @@
 //======================================
 package screenplay.stepDefs;
 
+import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 //======================================
 // IMPORT SECTION
 //======================================
@@ -35,7 +36,7 @@ public class API_WikiHomePage {
 		@Given("^User has access of wikipedia page as a \"([^\"]*)\"$")
 	    	public void userHasAccessOfPageAndNavigateToPage(String actorName) throws Throwable {
 		    		// Set the actor
-	    			CommonSteps.initiateActor(actorName);
+				theActorCalled(actorName);
 	    	}
 		
 		@When("^User request for the landing page content$")

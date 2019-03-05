@@ -10,11 +10,11 @@ pipeline {
                 }
             }
         }
-        stage('Test Stage') {
+        stage('BuildAndTest Stage') {
             steps {
                 echo 'Testing..'
                 withMaven(maven: 'mvn_3_6_0'){
-                		sh 'mvn clean test'
+                		sh 'mvn clean build -Dcucumber.options="--tags @Test1"'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 withMaven(maven: 'mvn_3_6_0'){
-                		sh 'mvn clean deploy'
+                		sh 'mvn deploy'
                 }
             }
         }
